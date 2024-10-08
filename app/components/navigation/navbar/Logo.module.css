@@ -1,0 +1,22 @@
+.logoLink {
+    display: block;
+  }
+  
+  .logoImage {
+    width: 100%;
+    max-width: 250px; /* Adjust the max-width as needed */
+    height: auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .logoImage {
+      max-width: 150px; /* Adjust the max-width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logoImage {
+      max-width: 100px; /* Adjust the max-width for even smaller screens */
+    }
+  }
+  
