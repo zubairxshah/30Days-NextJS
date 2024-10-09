@@ -45,7 +45,7 @@ const Widgets = () => {
               <h2 className="underline underline-offset-2 font-medium mb-2">
                 Calculator App
               </h2>
-              <p>It's a simple calculator..</p>
+              <p>It&apos;s a simple calculator..</p>
             </Link>
             <Link href="/pages/dclock" className={styles.card}>
               <h2 className="underline underline-offset-2 font-medium mb-2">
@@ -81,7 +81,7 @@ const Widgets = () => {
               <h2 className="underline underline-offset-2 font-medium mb-2">
                 BMI Calculator App!
               </h2>
-              <p>Calculate your 'Body Mass Index'..</p>
+              <p>Calculate your &apos;Body Mass Index&apos;..</p>
             </Link>
             <Link href="/pages/unitconverter" className={styles.card}>
               <h2 className="underline underline-offset-2 font-medium mb-2">
@@ -99,7 +99,7 @@ const Widgets = () => {
               <h2 className="underline underline-offset-2 font-medium mb-2">
                 Pomodoro Timer App
               </h2>
-              <p>Work efficiently and don't burn out..</p>
+              <p>Work efficiently and don&apos;t burn out..</p>
             </Link>
             <Link href="/pages/expensetracker" className={styles.card}>
               <h2 className="underline underline-offset-2 font-medium mb-2">

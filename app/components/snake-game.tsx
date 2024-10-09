@@ -128,7 +128,7 @@ export default function SnakeGame() {
       <div className="bg-[#1E1E1E] p-6 rounded-lg max-w-md">
         <h2 className="text-2xl font-bold text-[#FF00FF] mb-4">How to Play Snake</h2>
         <ul className="list-disc list-inside text-[#00FFFF] space-y-2">
-          <li>Use arrow keys to control the snake's direction</li>
+          <li>Use arrow keys to control the snake&apos;s direction</li>
           <li>Eat the green food to grow and increase your score</li>
           <li>Avoid running into the walls or your own tail</li>
           <li>Try to achieve the highest score possible!</li>

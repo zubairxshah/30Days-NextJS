@@ -1,7 +1,7 @@
 "use client"; // Enables client-side rendering for this component
 
 import md5 from "crypto-js/md5";
-import React, { useState, useRef, useEffect } from "react"; // Import React hooks
+import React, { useState, useRef, useEffect, useCallback } from "react"; // Import React hooks
 import { Button } from "@/components/ui/button"; // Import custom Button component
 import { Card, CardContent } from "@/components/ui/card"; // Import custom Card components
 import { Progress } from "@/components/ui/progress"; // Import custom Progress component
@@ -130,7 +130,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = () => {
   };
 
   // Function to handle track change
-  const handleTrackChange = async () => {
+  const handleTrackChange = useCallback(async () => {
     if (tracks[currentTrackIndex]) {
       const { artist, title } = tracks[currentTrackIndex];
       try {
@@ -142,7 +142,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = () => {
         console.error("Error handling track change:", error);
       }
     }
-  };
+  }, [currentTrackIndex, tracks]);
 
   // Function to handle file upload
   const handleUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -248,7 +248,7 @@ const AudioPlayer: React.FC<AudioPlayerProps> = () => {
     };
 
     playTrack();
-  }, [currentTrackIndex, tracks, isPlaying]);
+  }, [currentTrackIndex, tracks, isPlaying, handleTrackChange]);
 
   // JSX return statement rendering the Audio Player UI
   return (
